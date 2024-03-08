@@ -5,10 +5,22 @@ struct ContentView: View {
 	let greet = Greeting().greet()
 
 	var body: some View {
-		Text(greet)
-            .onTapGesture {
-                _ = [32][3]
+        Form {
+            Text(greet)
+            Button("Fatal Error") {
+                fatalError()
             }
+            Button("Uncaught Exception") {
+                let x: String? = nil
+                print(x!)
+            }
+            Section {
+                ForEach(0..<100) { i in
+                    Text("\(i)")
+                }
+            }
+        }
+            
 	}
 }
 

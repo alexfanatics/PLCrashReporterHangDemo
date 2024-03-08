@@ -1,0 +1,6 @@
+framework module DatadogCrashReporting {
+  umbrella header "DatadogCrashReporting-umbrella.h"
+
+  export *
+  module * { export * }
+}

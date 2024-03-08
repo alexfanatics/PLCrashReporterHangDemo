@@ -1,16 +1,29 @@
 PODS:
+  - DatadogCore (2.7.1):
+    - DatadogInternal (= 2.7.1)
+  - DatadogCrashReporting (2.7.1):
+    - DatadogInternal (= 2.7.1)
+    - PLCrashReporter (~> 1.11.1)
+  - DatadogInternal (2.7.1)
   - PLCrashReporter (1.11.1)
 
 DEPENDENCIES:
-  - PLCrashReporter
+  - DatadogCore
+  - DatadogCrashReporting
 
 SPEC REPOS:
   trunk:
+    - DatadogCore
+    - DatadogCrashReporting
+    - DatadogInternal
     - PLCrashReporter
 
 SPEC CHECKSUMS:
+  DatadogCore: 4a4cdf7beca3aa12b7095bebd926acea1a865a99
+  DatadogCrashReporting: f8b4ea638acaf58b68bbc51cb62a2d876f763241
+  DatadogInternal: b9217da25018284c087a2ed4b9bb3b0f26c767c0
   PLCrashReporter: 5d2d3967afe0efad61b3048d617e2199a5d1b787
 
-PODFILE CHECKSUM: 2fb98e314b918ee7732a4637792420cba9b4e570
+PODFILE CHECKSUM: 8f2b7b851cf6bdbd06bb827b183d5c824b005f09
 
 COCOAPODS: 1.12.1

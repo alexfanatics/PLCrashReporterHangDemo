@@ -6,6 +6,8 @@ target 'iosApp' do
   use_frameworks!
 
   # Pods for iosApp
-  pod 'PLCrashReporter'
+#  pod 'PLCrashReporter'
+  pod 'DatadogCrashReporting'
+  pod 'DatadogCore'
 
 end
